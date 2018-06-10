@@ -1,0 +1,96 @@
+/* 
+====================
+     HEADER
+====================
+*/
+.game {
+    text-align: center;
+}
+
+.instructions {
+    text-align: center;
+}
+/* 
+====================
+    GAME CONTROLS
+====================
+*/
+.game-controls {
+    display: flex;
+    justify-content: center;
+}
+.difficulty {
+    text-align: center;
+    font-size: 24px;
+}
+.play {
+    text-align: center;
+    font-size: 30px;
+}
+/* 
+====================
+     CARDS
+====================
+*/
+.card-holder {
+    background: lightgrey;
+    padding: 50px 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    border-radius: 4%;
+    margin: 5px 5px;
+    background: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
+
+.front {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    /* backface-visibility: hidden; */
+    transform: rotateY(180deg);
+    overflow: hidden;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: blue;
+    z-index: 0;
+    transform: rotateX(0deg) !important;
+    font-size: 36px;
+    /* display: none; */
+}
+/* 
+====================
+   CARD ANIMATIONS
+====================
+*/
+.flip {
+    display: default;
+    transform: rotateY(180deg);
+}
+
+.unflip {
+    display: default;
+    transform: rotateY(180deg);
+}
